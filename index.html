@@ -8,9 +8,6 @@
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
       const redirect = urlParams.get('redirect');
-      try {
-        new URL(redirect);
-      }
       document.getElementById("message").innerHTML = "Redirecting to " + redirect;
       setTimeout(function() {
         window.location.href = redirect;
