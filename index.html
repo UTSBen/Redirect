@@ -1,0 +1,14 @@
+<HTML>
+  <HEAD>
+    <TITLE>Redirecting...</TITLE>
+  </HEAD>
+  <BODY>
+    <CENTER><h1 id="message">Loading...</h1></CENTER>
+    <SCRIPT>
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const redirect = urlParams.get('redirect');
+      document.getElementById("message").innerHTML = "Redirecting to " + redirect;
+    </SCRIPT>
+  </BODY>
+</HTML>
