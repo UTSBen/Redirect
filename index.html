@@ -17,11 +17,19 @@
       animation: spin 1s linear infinite;
       -webkit-animation: spin 1s linear infinite;
     }
+	
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+    }
   
   </STYLE>
   </HEAD>
   <BODY>
-    <CENTER><div class="loader"></div></CENTER>
+    <div class="center"><div class="loader"></div></div>
     <SCRIPT>
       let delay;
       const queryString = window.location.search;
